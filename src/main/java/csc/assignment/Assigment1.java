@@ -23,6 +23,16 @@ public class Assigment1 {
     }
 
     // switch statement function
+    private static int getValueFromSwitchStatement(String key) {
+        switch (key) {
+            case value:
+
+                break;
+
+            default:
+                break;
+        }
+    }
 
     // return function
     public int getSalaryFor(String status) {
