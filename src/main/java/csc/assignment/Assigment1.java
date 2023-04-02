@@ -30,6 +30,12 @@ public class Assigment1 {
         return value;
     }
 
-    // total amount paid to all beneficiaries
+    // total amount paid to all beneficiaries\
+    public int getTotalPayment() {
+        int value = 0;
+        for (Integer integer : memory)
+            value += integer;
+        return value;
+    }
 
 }
