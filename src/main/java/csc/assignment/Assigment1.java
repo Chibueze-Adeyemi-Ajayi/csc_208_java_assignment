@@ -25,19 +25,23 @@ public class Assigment1 {
     // switch statement function
     private static int getValueFromSwitchStatement(String key) {
         switch (key) {
-            case value:
-
-                break;
-
+            case "single":
+                return 500;
+            case "married":
+                return 2000;
+            case "seperated":
+                return 3000;
+            case "divorced":
+                return 4000;
             default:
-                break;
+                return 0;
         }
     }
 
     // return function
     public int getSalaryFor(String status) {
         // push to array
-        int value = db.get(status);
+        int value = getValueFromSwitchStatement(status) | db.get(status);
         memory.add(value);
         return value;
     }
