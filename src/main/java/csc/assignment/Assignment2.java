@@ -25,12 +25,13 @@ public class Assignment2 {
     }
 
     public void initAssignmentOperations() throws Exception {
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < 2; i++) {
+            print("Input lecturer " + i + 1 + " name, rank");
             Scanner scanner = new Scanner(System.in);
             while (scanner.hasNextLine()) {
-                print("Input lecturer " + i + " name, rank");
                 String[] input = scanner.nextLine().split(",");
-                salaries.put(input[0], Integer.parseInt(input[1]));
+                salaries.put(input[0], salaries.get(input[i]));
+                scanner.close();
             }
         }
         computeData();

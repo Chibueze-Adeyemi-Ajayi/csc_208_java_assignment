@@ -40,7 +40,7 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
-        print("Input lecturers name, rank");
+        print("Assignment 2 magic");
         Assignment2 ass = Assignment2.getInstance();
         ass.initAssignmentOperations();
     }
