@@ -13,11 +13,13 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        print("Hello, I'm here to solve CSC 201 Assignment 1.\nI want you to kindly input marital status, seperate each by comma ',' then I'll print the salary and the overall.\nThank you dear");
         Scanner x = new Scanner(System.in);
-        print("Jilo Billionaire");
         while (x.hasNextLine()) {
             print(x.nextLine());
+            x.close();
         }
+
     }
 }
