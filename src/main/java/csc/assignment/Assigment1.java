@@ -1,5 +1,6 @@
 package csc.assignment;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /*
@@ -10,6 +11,7 @@ import java.util.HashMap;
 public class Assigment1 {
 
     private static HashMap<String, Integer> db = new HashMap<String, Integer>();
+    private static ArrayList<Integer> memory = new ArrayList<Integer>();
 
     // singleton
     public static Assigment1 getInstance() {
@@ -18,6 +20,14 @@ public class Assigment1 {
         db.put("seperated", 3000);
         db.put("divorced", 4000);
         return new Assigment1();
+    }
+
+    // return function
+    public int getSalaryFor(String status) {
+        // push to array
+        int value = db.get(status);
+        memory.add(value);
+        return value;
     }
 
 }
