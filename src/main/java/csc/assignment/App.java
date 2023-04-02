@@ -45,16 +45,14 @@ public class App {
         ass.initAssignmentOperations();
     }
 
+    private static <E> void print(E data, E data2, E data3) {
+        System.out.print(data);
+        System.out.print(data2);
+        System.out.print(data3);
+    }
+
     private static void question3() {
-        print("Quadratic equation calculator");
-        print("Input A");
-        Scanner a = new Scanner(System.in);
-        print("Input B");
-        Scanner b = new Scanner(System.in);
-        print("Input C");
-        Scanner c = new Scanner(System.in);
-        double[] answers = new Assigment3().solveQuadratic(a.nextInt(), b.nextInt(), c.nextInt());
-        print("x = " + answers[0] + " or " + answers[1]);
+        new Assigment3().solveQuadratic();
     }
 
     public static void main(String[] args) throws Exception {
