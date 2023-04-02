@@ -30,4 +30,6 @@ public class Assigment1 {
         return value;
     }
 
+    // total amount paid to all beneficiaries
+
 }
