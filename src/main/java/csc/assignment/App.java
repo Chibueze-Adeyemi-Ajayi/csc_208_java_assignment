@@ -53,6 +53,8 @@ public class App {
         Scanner b = new Scanner(System.in);
         print("Input C");
         Scanner c = new Scanner(System.in);
+        double[] answers = new Assigment3().solveQuadratic(a.nextInt(), b.nextInt(), c.nextInt());
+        print("x = " + answers[0] + " or " + answers[1]);
     }
 
     public static void main(String[] args) throws Exception {
