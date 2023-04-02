@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Assignment2 {
 
     // two dimensional hashmap
-    private final static HashMap<String, Integer> salaries = new HashMap<String, Integer>();
+    private final static HashMap<String, Integer> salaries = new HashMap<String, Integer>();\
 
     private static <E> void print(E data) {
         System.out.println(data);
@@ -23,8 +23,9 @@ public class Assignment2 {
         for (int i = 0; i < 12; i++) {
             Scanner scanner = new Scanner(System.in);
             while (scanner.hasNextLine()) {
-                print("Input lecturer " + i + " name");
-                print("Input lecturer " + i + " rank");
+                print("Input lecturer " + i + " name, rank");
+                String[] input = scanner.nextLine().split(",");
+                salaries.put(input[0], input[1]);
             }
         }
         return new Assignment2();
