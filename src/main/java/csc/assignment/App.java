@@ -39,9 +39,23 @@ public class App {
         }
     }
 
-    public static void main(String[] args) throws Exception {
+    private static void question2() throws Exception {
         print("Assignment 2 magic");
         Assignment2 ass = Assignment2.getInstance();
         ass.initAssignmentOperations();
+    }
+
+    private static void question3() {
+        print("Quadratic equation calculator");
+        print("Input A");
+        Scanner a = new Scanner(System.in);
+        print("Input B");
+        Scanner b = new Scanner(System.in);
+        print("Input C");
+        Scanner c = new Scanner(System.in);
+    }
+
+    public static void main(String[] args) throws Exception {
+        question3();
     }
 }
