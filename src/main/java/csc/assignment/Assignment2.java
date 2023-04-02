@@ -9,19 +9,22 @@ import java.util.Scanner;
 public class Assignment2 {
 
     // two dimensional hashmap
-    private final static HashMap<String, ArrayList<Integer>> salaries = new HashMap<String, ArrayList<Integer>>();
+    private final static HashMap<String, Integer> salaries = new HashMap<String, Integer>();
 
     private static <E> void print(E data) {
         System.out.println(data);
     }
 
     public static Assignment2 getInstance() {
-        salaries.put("professor",  );
+        salaries.put("professor", 5000);
+        salaries.put("associate Professor", 2999);
+        salaries.put("senior Lecturer", 2499);
+        salaries.put("lecturer", 1999);
         for (int i = 0; i < 12; i++) {
             Scanner scanner = new Scanner(System.in);
             while (scanner.hasNextLine()) {
-                print("Input lecturer " + i +" name");
-                print("Input lecturer " + i +" rank");
+                print("Input lecturer " + i + " name");
+                print("Input lecturer " + i + " rank");
             }
         }
         return new Assignment2();
