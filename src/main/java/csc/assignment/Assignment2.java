@@ -1,6 +1,5 @@
 package csc.assignment;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -25,16 +24,16 @@ public class Assignment2 {
     }
 
     public void initAssignmentOperations() throws Exception {
-        for (int i = 0; i < 2; i++) {
-            print("Input lecturer " + i + 1 + " name, rank");
+        for (int i = 0; i <= 20; i++) {
+            print("Input lecturer " + (i + 1) + " name, rank");
             Scanner scanner = new Scanner(System.in);
-            while (scanner.hasNextLine()) {
+            if (scanner.hasNextLine()) {
                 String[] input = scanner.nextLine().split(",");
-                salaries.put(input[0], salaries.get(input[i]));
-                scanner.close();
+                salaries.put(input[0], salaries.get(input[1]));
             }
         }
         computeData();
+        salaries.clear();
     }
 
     private void computeData() {
