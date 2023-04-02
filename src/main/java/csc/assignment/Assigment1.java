@@ -22,6 +22,8 @@ public class Assigment1 {
         return new Assigment1();
     }
 
+    // switch statement function
+
     // return function
     public int getSalaryFor(String status) {
         // push to array
@@ -36,6 +38,11 @@ public class Assigment1 {
         for (Integer integer : memory)
             value += integer;
         return value;
+    }
+
+    // erase memnory
+    public void clear() {
+        memory.clear();
     }
 
 }
